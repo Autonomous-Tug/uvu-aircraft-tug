@@ -20,4 +20,4 @@ status = zed.open(init_params)
 if status != sl.ERROR_CODE.SUCCESS:
     print("Camera Open : "+repr(status)+". Exit program.")
     exit()
-print("Hello My Zeddy bear!!")
+print("Hello My Zeddy bear!!!")
