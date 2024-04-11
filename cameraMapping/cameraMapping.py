@@ -16,7 +16,7 @@ mapping_parameters.range_meter = mapping_parameters.get_range_preset(sl.MAPPING_
 mapping_parameters.map_type = sl.SPATIAL_MAP_TYPE.MESH # uncomment below if wanting to use point cloud data. 
 # mapping_parameters.map_type = sl.SPATIAL_MAP_TYPE.FUSED_POINT_CLOUD 
 zed = sl.Camera()
-status = zed.open(init)
+status = zed.open(init_params)
 if status != sl.ERROR_CODE.SUCCESS:
     print("Camera Open : "+repr(status)+". Exit program.")
     exit()
